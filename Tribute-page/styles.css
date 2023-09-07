@@ -1,0 +1,106 @@
+@import url('https://fonts.cdnfonts.com/css/roboto-slab-2');
+
+:root{
+  font-size:62.5%;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  padding:1rem 1.5rem;
+  background-color:rgb(255,255,230);
+  font-family:'Roboto Slab';
+  font-size:1.5rem;
+}
+
+#main{
+  background-color:rgb(210,210,210);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-radius:0.5rem;
+  padding:3rem;
+  overflow:hidden;
+}
+
+#title{
+  font-size:3rem;
+  letter-spacing:0.3rem;
+  text-align:center;
+}
+
+#title-p{
+  font-size:1.5rem;
+  margin:1rem;
+}
+
+#img-div{
+  background-color:rgb(50,50,50);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:2rem;
+  color:rgb(255,255,230);
+  width:100%;
+  max-width:80rem;
+}
+
+#image{
+  max-width:100%;
+  margin-bottom:1rem;
+}
+
+#img-caption{
+  font-size:1.5rem;
+}
+
+#tribute-info{
+  max-width:80rem;
+  text-align:justify;
+}
+
+#tribute-info h2, #tribute-info h3{
+  text-align:center;
+  margin:2rem 0;
+}
+
+#tribute-info p{
+  margin:1rem 0;
+}
+
+#albuns{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:1rem;
+}
+
+#albuns figure{
+  display:flex;
+  flex-direction:column;
+  width:15rem;
+}
+
+#albuns figure img{
+  width:100%;
+  height:15rem;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+#albuns figure img:hover{
+  box-shadow:0 0 1.2rem 0.1rem rgb(80,80,80);
+  filter: brightness(90%);
+  transition:0.2s;
+}
+
+#albuns figure figcaption{
+  margin-top:0.5rem;
+  color:rgb(50,50,50);
+  text-align:center;
+}

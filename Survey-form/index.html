@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>First form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Formulário acadêmico</h1>
+      <p id="description">Formulário para acadêmicos da Universidade Federal da Grande Dourados UFGD</p>
+    </header>
+    
+    <form action="" id="survey-form">
+      <label id="name-label" for="name">Nome<input type="text" id="name" name="name" placeholder="Digite seu nome completo" required /></label>
+      <label id="email-label" for="email">Email<input type="email" id="email" name="email" placeholder="Digite seu email" required /></label>
+      <label id="number-label" for="age">Semestre<input type="number" id="number" name="number" min=1 max=14 placeholder="Semestre" required /></label>
+
+      <label>Qual sua pretenção de salário
+        <select id="dropdown" name="course">
+          <option value="">Escolha</option>
+          <option value="1">1320~2500</option>
+          <option value="2">2500~4000</option>
+          <option value="2">4000~7000</option>
+          <option value="2">7000~10000</option>
+          <option value="2">10000~18000</option>
+          <option value="2">18000+</option>
+        </select>
+      </label>
+
+      <p>Você gosta de programação?</p>
+      <label for="yes"><input type="radio" id="yes" name="choice" value="1" /> Sim</label>
+      <label for="no"><input type="radio" id="no" value="0" name="choice" /> Não</label>
+      <p>Você sabe programar em quais linguagens?</p>
+      <label for="c"><input type="checkbox" id="c" name="language" value="1" /> C</label>
+      <label for="c#"><input type="checkbox" id="c#" name="language" value="2" /> C#</label>
+      <label for="c++"><input type="checkbox" id="c++" name="language" value="3" /> C++</label>
+      <label for="java"><input type="checkbox" id="java" name="language" value="4" /> Java</label>
+      <label for="javascript"><input type="checkbox" id="javascript" name="language" value="5" /> Javascript</label>
+      <labe for="octave"><input type="checkbox" id="octave" name="language" value="6" /> Octave</label>
+      <label for="pascal"><input type="checkbox" id="pascal" name="language"  value="7" /> Pascal</label>
+      <label for="opinion">Deixe sua opinião sobre o curso <textarea id="opinion"></textarea></label>
+      <input type="submit" id="submit">
+    </form>
+
+  </body>
+</html>

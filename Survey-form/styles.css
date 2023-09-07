@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body{
+  font-family:"Poppins";
+  background-image: linear-gradient(115deg,rgba(50, 0, 155, 0.8),rgba(70, 60, 190, 0.7)),
+    url(https://www.direitopenalbrasileiro.com.br/wp-content/uploads/2021/10/Escritorio-Social-Virtual-aplicativo-para-pessoas-egressas-ganha-novas-funcionalidades.jpg);
+  background-size: cover;
+  background-position: center;
+  color:white;
+  font-size:1.15em;
+}
+label{
+  display:block;
+  margin:1rem 0;
+}
+form,header{
+  width:60%;
+  margin:0 auto;
+  min-width:200px;
+  max-width:500px;
+}
+#title,#description{
+  text-align:center;
+}
+#description{
+  font-style:italic;
+}
+input,select,textarea{
+  width:100%;
+  background:rgb(0,10,40);
+  border:none;
+  padding:5px;
+  color:white;
+  font-size:1rem;
+  margin:10px 0 0 0;
+}
+textarea{
+  max-width:100%;
+}
+form{
+  background-color:#00000090;
+  padding:30px;
+  border-radius:10px;
+  backdrop-filter:blur(9px)
+}
+input[type="radio"],input[type="checkbox"]{
+  width:unset;
+}
+input[type="submit"]{
+  display:block;
+  width:50%;
+  margin:0 auto;
+  border:1px solid white;
+  cursor:pointer;
+}
