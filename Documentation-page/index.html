@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Documentação Python</title>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' href='styles.css'>
+    </head>
+    <body>
+        <nav id='navbar'>
+            <header>
+                <h1>Python - Documentação</h1>
+            </header>
+            <ul>
+                <li>
+                    <a href="#Introdução" class='nav-link'>Introdução</a>
+                    <a href="#Por_que_Python?">Por que Python?</a>
+                </li>
+                <li>
+                    <a href="#Instalação_e_Configuração" class='nav-link' class='nav-link'>Instalação e Configuração</a>
+                    <a href="#Baixando_e_Instalando_o_Python">Baixando e Instalando o Python</a>
+                    <a href="#Configuração_do_Ambiente_de_Desenvolvimento">Configuração do Ambiente de Desenvolvimento</a>
+                </li>
+                <li>
+                    <a href="#Sintaxe_básica" class='nav-link'>Sintaxe básica</a>
+                    <a href="#Variáveis_em_Python">Variáveis em Python</a>
+                    <a href="#Tipos_de_Dados">Tipos de Dados</a>
+                    <a href="#Operadores_e_Expressões">Operadores e Expressões</a>
+                    <a href="#Estruturas_de_Controle">Estruturas de Controle</a>
+                    <a href="#Comentários_e_Formatação_de_Código">Comentários e Formatação de Código</a>
+                </li>
+                <li>
+                    <a href="#Funções_e_Módulos" class='nav-link'>Funções e Módulos</a>
+                    <a href="#Definindo_Funções">Definindo Funções</a>
+                </li>
+                <li>
+                    <a href="#Referências" class='nav-link'>Referências</a>
+                </li>
+            </ul>
+        </nav>
+        <main id='main-doc'>
+            <section class='main-section' id='Introdução'>
+                <header>Introdução</header>
+                <article>
+                    <p>Bem-vindo à documentação técnica da linguagem Python! Python é uma das linguagens de programação mais
+                        populares e amplamente utilizadas no mundo. Conhecida por sua sintaxe simples e legibilidade, Python
+                        é a escolha ideal para iniciantes que estão dando os primeiros passos na programação, bem como para
+                        desenvolvedores experientes que desejam criar aplicativos complexos e eficientes.</p>
+
+                    <h2 id="Por_que_Python?">Por que Python?</h2>
+                    <p>Python conquistou os corações de desenvolvedores em todo o mundo por várias razões convincentes:</p>
+                    <h3>Sintaxe clara e legível</h3>
+                    <p>A sintaxe limpa e fácil de ler torna o Python acessível até mesmo para aqueles que não têm
+                        experiência anterior em programação. O código Python é frequentemente descrito como "pseudo-código
+                        executável".</p>
+                    <h3>Versatilidade</h3>
+                    <p>Python é uma linguagem de propósito geral, o que significa que pode ser usada em uma ampla variedade
+                        de domínios. Seja desenvolvimento web, análise de dados, aprendizado de máquina, automação, jogos ou
+                        pesquisa científica, Python tem uma ampla gama de bibliotecas e frameworks para atender às suas
+                        necessidades.</p>
+                    <h3>Comunidade Ativa</h3>
+                    <p>Python possui uma comunidade de desenvolvedores extremamente ativa e acolhedora. Isso significa que
+                        você nunca estará sozinho em sua jornada de aprendizado e desenvolvimento. Há uma abundância de
+                        recursos, tutoriais e fóruns disponíveis para ajudá-lo.</p>
+                    <h3>Biblioteca Padrão Rica</h3>
+                    <p>Python inclui uma biblioteca padrão abrangente que abrange desde operações básicas de manipulação de
+                        strings até comunicação de rede e criação de interfaces gráficas. Isso permite que você faça mais
+                        com menos esforço.</p>
+                    <h3>Código Aberto e Gratuito</h3>
+                    <p>Python é uma linguagem de código aberto, o que significa que você pode usá-la livremente, modificar e
+                        distribuir seu código. Não há custos associados à sua utilização.</p>
+                    <p class="explic">Nesta documentação, exploraremos todos os aspectos essenciais da linguagem Python, desde os conceitos
+                        mais básicos até tópicos avançados. Você aprenderá como instalar e configurar o Python, compreender
+                        a sintaxe fundamental, manipular estruturas de dados, criar funções, trabalhar com orientação a
+                        objetos, gerenciar exceções, e muito mais.</p>
+                </article>
+            </section>
+            <section class='main-section' id='Instalação_e_Configuração'>
+                <header>Instalação e Configuração</header>
+                <article>
+                    <p>Antes de mergulhar de cabeça na programação em Python, é crucial configurar seu ambiente dedesenvolvimento corretamente. Neste tópico, você encontrará instruções detalhadas sobre comoinstalar e configurar o Python em seu sistema operacional, garantindo que você esteja pronto paracomeçar a escrever código em Python de forma eficaz.</p>
+
+                    <h2 id="Baixando_e_Instalando_o_Python">Baixando e Instalando o Python</h2>
+                    <p>Antes de começar a escrever código em Python, é fundamental ter o interpretador Python instalado emseu sistema. Felizmente, o processo de instalação do Python é simples e está disponível para umavariedade de sistemas operacionais.</p>
+                    <h3>Windows</h3>
+                    <p>Para usuários do Windows, siga estas etapas:</p>
+                    <ol>
+                        <li>Acesse o site oficial do Python em <a href='https://python.org'>python.org</a></li>
+                        <li>Baixe a versão mais recente do Python para Windows, que é apresentada como um instalador executável (.exe).</li>
+                        <li>Execute o arquivo baixado e siga as instruções do instalador.</li>
+                        <li>Marque a opção "Adicionar Python X.X ao PATH" durante a instalação, onde "X.X" representa a versão atual do Python.</li>
+                        <li>Após a instalação, abra o Prompt de Comando ou PowerShell e digite python para verificar se a instalação foi bem-sucedida. Você verá a versão do Python e o prompt interativo.</li>
+                    </ol>
+                    <h3>macOS</h3>
+                    <p>Para usuários de macOS, siga estas etapas:</p>
+                    <ol>
+                        <li>Abra o Terminal.</li>
+                        <li>Use o comando brew para instalar o Python 3, caso ainda não esteja instalado:
+                            <code>brew install python3
+                            </code>
+                        </li>
+                        <li>Após a instalação, você pode verificar a versão do Python usando o comando python3 --version</li>
+                    </ol>
+
+                    <h2 id="Configuração_do_Ambiente_de_Desenvolvimento">Configuração do Ambiente de Desenvolvimento</h2>
+                    <p>A escolha do ambiente de desenvolvimento é uma etapa importante para tornar a programação em Python mais eficiente e agradável. Existem várias opções disponíveis, e a escolha depende de suas preferências e necessidades específicas.</p>
+                    <h3>Editores de Código Leves</h3>
+                    <p>Se você prefere um ambiente de desenvolvimento mais leve e flexível, os editores de código são uma ótima opção. Alguns dos editores populares incluem:</p>
+                    <ul>
+                        <li><span>Visual Studio Code (VSCode):</span> Um editor de código gratuito da Microsoft com suporte Python extensivo, incluindo depuração integrada e extensões personalizáveis.</li>
+                        <li><span>Sublime Text:</span> Um editor de código altamente personalizável com suporte para Python e uma ampla gama de plugins.</li>
+                        <li><span>Atom:</span> Outro editor de código de código aberto com suporte Python e uma comunidade ativa de desenvolvedores.</li>
+                    </ul>
+                    <h3>Ambientes de Desenvolvimento Integrados (IDEs)</h3>
+                    <p>Se você deseja um ambiente de desenvolvimento mais robusto e completo, considere uma IDE. Algumas IDEs populares para Python incluem:</p>
+                    <ul>
+                        <li><span>PyCharm:</span> Uma IDE Python desenvolvida pela JetBrains, com uma edição gratuita com recursos essenciais.</li>
+                        <li><span>Spyder:</span> Uma IDE científica de código aberto voltada para análise de dados, com suporte para Python e bibliotecas científicas.</li>
+                        <li><span>Jupyter Notebook:</span> Uma ferramenta interativa para escrever e compartilhar documentos que contêm código, visualizações e texto. É amplamente usado em ciência de dados e pesquisa.</li>
+                    </ul>
+                    <p class="explic">Escolher o ambiente de desenvolvimento certo depende das suas preferências pessoais e dos requisitos do seu projeto. À medida que você se tornar mais familiarizado com Python, você pode experimentar diferentes ambientes e escolher o que melhor atende às suas necessidades.</p>
+                </article>
+            </section>
+            <section class="main-section" id='Sintaxe_básica'>
+                <header>Sintaxe básica</header>
+                <article>
+                    <p>A sintaxe em Python é conhecida por sua clareza e legibilidade, tornando-a uma linguagem acessível para iniciantes e uma escolha popular entre desenvolvedores experientes. Neste tópico, exploraremos os elementos essenciais da sintaxe Python, desde a declaração de variáveis até o uso de estruturas de controle, operadores e formatação de código.</p>
+
+                    <h2 id="Variáveis_em_Python">Variáveis em Python</h2>
+                    <p>Variáveis são usadas para armazenar dados em Python. Diferentemente de algumas linguagens, em Python, você não precisa declarar explicitamente o tipo de uma variável. A sintaxe para declarar uma variável é simples:</p>
+                    <code>nome_da_variavel = valor
+                    </code>
+                    <p>Exemplo:</p>
+                    <code>nome = "João"
+                        idade = 30
+                        salario = 2500.50
+                    </code>
+
+                    <h2 id="Tipos_de_Dados">Tipos de Dados</h2>
+                    <p>Python oferece diversos tipos de dados, incluindo:</p>
+                    <ul>
+                        <li><span>Inteiros (int):</span> Números inteiros, como 5 ou -12.</li>
+                        <li><span>Números de Ponto Flutuante (float):</span> Números com casas decimais, como 3.14.</li>
+                        <li><span>Strings (str):</span> Sequências de caracteres, como "Olá, mundo!".</li>
+                        <li><span>Booleanos (bool):</span> Valores True ou False.</li>
+                        <li><span>Listas:</span> Sequências mutáveis de elementos.</li>
+                        <li><span>Tuplas:</span> Sequências imutáveis de elementos.</li>
+                        <li><span>Dicionários:</span> Pares chave-valor para armazenamento de dados.</li>
+                        <li><span>Conjuntos (sets):</span> Coleções não ordenadas de elementos únicos.</li>
+                    </ul>
+                    <p>Para criar variáveis do tipo listas utilizamos os colchetes []:</p>
+                    <code>numeros = [1, 2, 3, 4, 5]
+                        nomes = ["Alice", "Bob", "Charlie"]
+                    </code>
+                    <p>Para criar varíaveis do tipo tupla utilizamos os parenteses ():</p>
+                    <code>coordenadas = (10, 20)
+                        cores = ("vermelho", "verde", "azul")
+                    </code>
+                    <p>Para criar variáveis do tipo dicionário e conjuntos utilizamos as chaves {}:</p>
+                    <p>Dicionário (dict):</p>
+                    <code>pessoa = {"nome": "João", "idade": 25, "cidade": "São Paulo"}
+                        estoque = {"maçãs": 100, "peras": 50, "uvas": 75}
+                    </code>
+                    <p>Conjuntos (sets):</p>
+                    <code>numeros_pares = {2, 4, 6, 8, 10}
+                        vogais = {"a", "e", "i", "o", "u"}
+                    </code>
+
+                    <h2 id="Operadores_e_Expressões">Operadores e Expressões</h2>
+                    <h3>Operadores Aritméticos</h3>
+                    <p>Python suporta operadores aritméticos padrão, incluindo adição (+), subtração (-), multiplicação (*), divisão (/), divisão inteira (//), módulo (%) e potenciação (**).</p>
+                    <p>Exemplo:</p>
+                    <code>soma = 5 + 3  # Resultado: 8
+                        divisao = 10 / 2  # Resultado: 5.0 (float)
+                    </code>
+                    <h3>Operadores de Comparação</h3>
+                    <p>Python inclui operadores de comparação, como igual (==), diferente (!=), maior (>), menor (<), maior ou igual (=>) e menor ou igual (<=).</p>
+                    <p>Exemplo:</p>
+                    <code>igualdade = 5 == 3  # Resultado: False
+                        maior_que = 10 > 5  # Resultado: True
+                    </code>
+                    <h3>Operadores Lógicos</h3>
+                    <p>Os operadores lógicos incluem "and", "or" e "not" para avaliar expressões booleanas.</p>
+                    <p>Exemplo:</p>
+                    <code>verdadeiro_e_falso = True and False  # Resultado: False
+                        verdadeiro_ou_falso = True or False  # Resultado: True
+                    </code>
+
+                    <h2 id="Estruturas_de_Controle">Estruturas de Controle</h2>
+                    <p>Python oferece estruturas de controle condicionais e de repetição para controlar o fluxo de um programa.</p>
+                    <h3>Estruturas Condicionais (if, elif, else)</h3>
+                    <p>A estrutura condicional "if" permite executar blocos de código com base em condições (True ou False).</p>
+                    <p>Exemplo:</p>
+                    <code>idade = 18
+                        if idade >= 18:
+                        <span class="tab">print("Você é maior de idade.")</span>
+                        else:
+                        <span class="tab">print("Você é menor de idade.")</span>
+                    </code>
+                    <p>Você também pode usar "elif" para adicionar condições intermediárias.</p>
+                    <h3>Estruturas de Repetição (while, for)</h3>
+                    <p>Python suporta loops "while" e "for" para repetir blocos de código.</p>
+                    <p>Exemplo:</p>
+                    <code>contador = 0
+                        while contador < 5:
+                        <span class="tab">print(contador)</span>
+                        <span class="tab">contador += 1</span>
+                        for i in range(5):
+                        <span class="tab">print(i)</span>
+                    </code>
+
+                    <h2 id="Comentários_e_Formatação_de_Código">Comentários e Formatação de Código</h2>
+                    <p>Comentários são importantes para documentar seu código. Em Python, você pode usar "#" para comentários de linha única e aspas triplas para comentários de várias linhas.</p>
+                    <p>Exemplo:</p>
+                    <code># Este é um comentário de linha única.
+
+                        """
+                        Este é um comentário
+                        de várias linhas.
+                        """
+                    </code>
+                </article>
+            </section>
+            <section class="main-section" id='Funções_e_Módulos'>
+                <header>Funções e Módulos</header>
+                <article>
+                    <p>Em Python, funções e módulos desempenham um papel crucial no desenvolvimento de código organizado, modular e reutilizável. Neste tópico, vamos explorar como definir, usar e organizar funções em Python, bem como como importar e usar módulos para reutilização de código.</p>
+                    
+                    <h2 id="Definindo_Funções">Definindo Funções</h2>
+                    <p>Uma função em Python é um bloco de código reutilizável que executa uma tarefa específica quando chamado. Ela ajuda a dividir o código em partes mais gerenciáveis e facilita a manutenção.</p>
+                    <p>Sintaxe para Definir Funções:</p>
+                    <code>def nome_da_funcao(parametros):
+                        <span class="tab"># Código da função</span>
+                        <span class="tab">return resultado</span>
+                    </code>
+
+                    <h2 id="Parâmetros_e_Retorno_de_Função">Parâmetros e Retorno de Função</h2>
+                    <ul>
+                        <li><span>Parâmetros:</span> As funções podem aceitar parâmetros (valores de entrada) que são usados dentro da função para executar uma operação.</li>
+                        <li><span>Retorno:</span> As funções podem retornar um valor específico usando a instrução return. Se não houver um comando return, a função retornará None implicitamente.</li>
+                    </ul>
+                    <p>Exemplo:</p>
+                    <code>def saudacao(nome):
+                        <span class="tab">return "Olá, " + nome + "!"</span>
+                            
+                        mensagem = saudacao("Alice")
+                        print(mensagem)  # Saída: "Olá, Alice!"
+                    </code>
+                </article>
+            </section>
+            <section class="main-section" id='Referências'>
+                <header>Referências</header>
+                <article>
+                    <p>Para acessar a documentação completa em Python <a href="https://docs.python.org/pt-br/3/tutorial/">clique aqui</a></p>
+                </article>
+            </section>
+        </main>
+    </body>
+    </html>
