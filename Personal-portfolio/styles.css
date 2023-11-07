@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Manrope:wght@800&family=Roboto:wght@500&display=swap');
+:root{
+    font-size: 67.5%;
+    --primaty-color:#06564e;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a,p{
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Manrope';
+    text-align: center;
+}
+
+h2{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.primary{
+    color:var(--primaty-color);
+}
+
+#header{
+    position:fixed;
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:0 20%;
+    z-index: 9999;
+}
+
+#header nav{
+    display: flex;
+    gap:4rem;
+}
+
+#header nav a{
+    color:white;
+    font-size: 2.2rem;
+}
+
+#header nav a:hover{
+    color:rgb(180,180,180);
+}
+
+body{
+    background-color: black;
+    color:white;
+    overflow-x: hidden;
+}
+
+#welcome-section{
+    background:linear-gradient(-30deg,rgb(20, 20, 20),rgb(10, 10, 10) 40%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome-section h1 span.title{
+    font-size: 4.8rem;
+}
+
+#welcome-section h1 span.primary{
+    font-size: 3.2rem;
+    font-family: 'Chakra Petch';
+}
+
+#projects{
+    background-color: white;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding:6rem 10%;
+}
+
+#projects .projects-block{
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:3rem auto;
+    justify-content: space-around;
+    gap:20px;
+}
+
+.projects-block .project{
+    border:3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 330px;
+}
+
+.projects-block .project img{
+    width:250px;
+    height:250px;
+    object-fit: cover;
+    border:2px solid black;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.project img:hover{
+    filter:brightness(75%);
+    transition: .7s;
+}
+
+.project-tile{
+    margin-top:1rem;
+    cursor:pointer;
+    color:black;
+    font-size: 2rem;
+}
+
+.project-tile:hover{
+    color:var(--primaty-color);
+}
+
+#projects h2{
+    
+}
+
+#contacts{
+    width: 100vw;
+    background-color: rgb(10, 10, 10);
+    padding:6rem 10%;
+}
+
+.contacts-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1280px;
+    margin:0 auto;
+    gap:10%;
+}
+
+.contacts-block h2{
+    margin-bottom: 1.5rem;
+}
+
+.contacts-block input,.contacts-block textarea{
+    width: 100%;
+    font-size:1.6rem;
+    padding: .6rem;
+    margin:.5rem 0;
+    resize: none;
+}
+
+.contacts-block label{
+    font-size:1.8rem;
+}
+
+.contacts-block h3{
+    margin:1rem 0;
+    font-size: 2rem;
+}
+
+.contacts-block div:last-of-type{
+    justify-self: center;
+    align-self: center;
+}
+
+.contacts-block div:last-of-type p{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+#redes{
+    margin-top:2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#redes i{
+    font-size: 3rem;
+    color:white;
+}
+
+#redes i:hover{
+    color:rgb(180,180,180);
+}
+
+button{
+    padding:1rem;
+    font-size:1.8rem;
+    width: 30%;
+    margin-top:1rem;
+    cursor:pointer;
+    border:none;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+button:hover{
+    color:white;
+    background-color: rgb(10, 10, 10);
+    transition: .5s;
+}
+
+footer{
+    width: 100vw;
+    text-align: center;
+    padding:4rem;
+}
+
+@media (max-width:800px){
+    .contacts-block{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:600px){
+    #welcome-section h1 span.title{
+        font-size: 3.8rem;
+    }
+    #header{
+        justify-content: center;
+        padding:0 10%;
+    }
+
+    #header nav{
+        gap:unset;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #header nav a{
+        font-size: 1.6rem;
+    }
+
+    .projects-block .project{
+        width: 260px;
+        height: 260px;
+    }
+    
+    .projects-block .project img{
+        width:200px;
+        height:200px;
+    }
+    .project-tile{
+        margin-top: .5rem;
+    }
+}

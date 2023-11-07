@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel='stylesheet' href='styles.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifolio</title>
+    </head>
+    <body>
+        <header id='header'>
+            <nav id='navbar'>
+                <a href='#welcome-section'>Sobre</a>
+                <a href='#projects'>Projetos</a>
+                <a href='#contacts'>Contatos</a>
+            </nav>
+        </header>
+        <section id='welcome-section'>
+            <h1>
+                <span class="title">Olá, meu nome é Vinicius</span>
+                <span class="primary">um Desenvolvedor Web</span>
+            </h1>
+        </section>
+
+        <section id='projects'>
+            <h2>Alguns projetos desenvolvidos</h2>
+
+            <div class="projects-block">
+                <div class='project'>
+                    <a href="https://autware.surge.sh" target="_blank"><img src="https://i.imgur.com/LbRkYb5.jpg" alt="Autware img"></a>
+                    <a class='project-tile' href="https://autware.surge.sh" target="_blank">Autware</a>
+                </div>
+                <div class='project'>
+                    <a href="https://home-pg.surge.sh" target="_blank"><img src="https://i.imgur.com/MaOyh1z.jpg" alt="Website Gestion img"></a>
+                    <a class='project-tile' href="https://home-pg.surge.sh" target="_blank">Website Gestion</a>
+                </div>
+                <div class='project'>
+                    <a href="https://codewa.surge.sh" target="_blank"><img src="https://i.imgur.com/tZ12S30.jpg" alt="CodeWA img"></a>
+                    <a class='project-tile' href="https://codewa.surge.sh" target="_blank">CodeWA</a>
+                </div>
+                <div class='project'>
+                    <a href="https://programai.surge.sh" target="_blank"><img src="https://i.imgur.com/UHMJ271.jpg" alt="Programai img"></a>
+                    <a class='project-tile' href="https://programai.surge.sh" target="_blank">Programaí</a>
+                </div>
+                <div class='project'>
+                    <a href="https://viniciusst1.github.io/Seja-do-bem/" target="_blank"><img src="https://i.imgur.com/1BOBins.jpg" alt="Seja do Bem img"></a>
+                    <a class='project-tile' href="https://viniciusst1.github.io/Seja-do-bem/" target="_blank">Seja do Bem</a>
+                </div>
+                <div class='project'>
+                    <a href="https://survey-form-ufgd.surge.sh/" target="_blank"><img src="https://i.imgur.com/1EfeNSm.jpg" alt="Survey Form img"></a>
+                    <a class='project-tile' href="https://survey-form-ufgd.surge.sh/" target="_blank">Surevy Form</a>
+                </div>
+            </div>
+        </section>
+
+        <section id='contacts'>
+            <div class="contacts-block">
+                <div>
+                    <h2>Quer conversar? Entre em contato</h2>
+                    <form>
+                        <label for="nome">Nome: <input type="text" name="nome" id="nome" placeholder="Digite aqui seu nome" required></label>
+                        <h3>Retorno para contatos</h3>
+                        <label for="e-mail">Email: <input type="email" name="email" id="email" placeholder="Digite aqui seu email" required></label>
+                        <label for="telefone">Número: <input type="number" name="telefone" id="telefone" placeholder="Digite aqui seu telefone"></label>
+                        <h3>Faça uma pergunta</h3>
+                        <textarea type="text" name="question" id="question" rows=4 placeholder="Digite aqui sua pergunta" required></textarea>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Contato">
+                        <input type="text" name="_honey" style="display:none">
+                        <center><button type="submit">Enviar</button></center>
+                    </form>
+                </div>
+                <div>
+                    <p>Me siga nas redes sociais.</p>
+                    <div id="redes">
+                        <a id='profile-link' href="https://github.com/viniciusSt1" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/viniciusstefanes/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/vinicius.stefanes" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/vin%C3%ADcius-stefanes-73a502189/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div> 
+                </div>
+            </div>
+            
+        </section>
+
+        <footer>
+            <p>Todos os direitos reservados</p>
+        </footer>
+    </body>
+</html>
